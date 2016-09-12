@@ -12,7 +12,6 @@ namespace Angular2CrudTest
         public static IComponentContext RegisterDependancies()
         {
             var builder = new ContainerBuilder();
-            // register dependency
             var dataContext = new ApplicationDbContext(DbConnectionFactory.CreateTransient());
             builder.RegisterInstance(dataContext).As<DbContext>().SingleInstance();
             builder.RegisterGeneric(typeof(DataRepository<>)).As(typeof(IDataRepository<>));
