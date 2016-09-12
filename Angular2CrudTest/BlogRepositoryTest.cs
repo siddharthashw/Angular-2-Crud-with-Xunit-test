@@ -18,7 +18,7 @@ namespace Angular2CrudTest
         }
 
         /// <summary>
-        /// Test case to check add method of blog repository
+        /// Test case to check Add method of blog repository
         /// </summary>
         [Fact]
         public void Add()
@@ -28,7 +28,7 @@ namespace Angular2CrudTest
         }
 
         /// <summary>
-        /// Test case to check add method of blog repository
+        /// Test case to check GetAll method of blog repository
         /// </summary>
         [Fact]
         public void GetAll()
@@ -41,7 +41,7 @@ namespace Angular2CrudTest
         }
 
         /// <summary>
-        /// Test case to check add method of blog repository
+        /// Test case to check GetById method of blog repository
         /// </summary>
         [Fact]
         public void GetById()
@@ -52,7 +52,7 @@ namespace Angular2CrudTest
         }
 
         /// <summary>
-        /// Test case to check add method of blog repository
+        /// Test case to check Update method of blog repository
         /// </summary>
         [Fact]
         public void Update()
@@ -64,7 +64,7 @@ namespace Angular2CrudTest
         }
 
         /// <summary>
-        /// Test case to check add method of blog repository
+        /// Test case to check Delete method of blog repository
         /// </summary>
         [Fact]
         public void Delete()
@@ -77,6 +77,9 @@ namespace Angular2CrudTest
             Assert.Equal(blogs.Count(), 2);
         }
 
+        /// <summary>
+        /// Private variable used in test cases
+        /// </summary>
         private Blog blog = new Blog()
         {
             Name = StringConstant.Name,
