@@ -1,0 +1,20 @@
+﻿<div>
+    <table>
+        <tr><td><a routerLink="add" routerLinkActive="active">Add New Blog</a></td></tr>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Date</td>
+        </tr>
+        <tr *ngFor="let blog of blogs">
+            <td>{{blog.Id}}</td>
+            <td>{{blog.Name}}</td>
+            <td>{{blog.Description}}</td>
+            <td>{{blog.Date}}</td>
+            <td><a routerLink="detail/{{blog.Id}}" routerLinkActive="active">Details</a></td>
+            <td><a routerLink="edit/{{blog.Id}}" routerLinkActive="active">Edit</a></td>
+            <td><a routerLink="delete/{{blog.Id}}" routerLinkActive="active">Delete</a></td>
+        </tr>
+    </table>
+</div>

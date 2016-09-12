@@ -1,0 +1,24 @@
+﻿<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Date</td>
+        </tr>
+        <tr>
+            <td><input type="hidden" />{{blogs.Id}}</td>
+            <td><input type="text" [(ngModel)]="blogs.Name" /></td>
+            <td><input type="text" [(ngModel)]="blogs.Description" /></td>
+            <td>{{blogs.Date}}</td>
+        </tr>
+        <tr>
+            <td>
+                <button (click)="editBlog(blogs)">Update</button>
+            </td>
+            <td>
+                <button (click)="goBack()">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</div>

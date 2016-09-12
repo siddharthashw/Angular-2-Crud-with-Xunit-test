@@ -1,0 +1,28 @@
+﻿<div>
+    <table>
+        <tr>
+            <td>
+                Name :
+            </td>
+            <td>
+                Description :
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" [(ngModel)]="blog.Name" />
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="blog.Description" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button (click)="addBlog(blog)">Add</button>
+            </td>
+            <td>
+                <button (click)="goBack()">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</div>
